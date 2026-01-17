@@ -7,7 +7,7 @@ expediteur = "evan.oulhen@gmail.com"
 destinataire = input("Le couillon qui va se faire avoir :")
 Mdp = "qtby lovi jtyj ogsz"#pour appli "Mail" 
 
-message = MIMEText("Bonjour,\n\ncliqué sur ce lien file:///C:/NSI/PHISHING/fichier.html .\n\nCordialement")
+message = MIMEText("Bonjour,\n\ncliqué sur ce lien https://evan18-ou.github.io/trying-projects/ .\n\nCordialement")
 message["Subject"] = "Test email Python"
 message["From"] = expediteur
 message["To"] = destinataire
@@ -19,3 +19,4 @@ serveur.send_message(message)
 serveur.quit()
 
 print("Email envoyé avec succès")
+
